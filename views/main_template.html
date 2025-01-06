@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站点隔离测试</title>
+</head>
+<body>
+    <h1>main 应用</h1>
+    <button onclick="javascript:window.open('<%= iframeUrl %>')">在新的标签页打开iframe应用</button>
+    <br>
+    <!--  同站应用：iframeUrl  -->
+    <iframe width="50%" height="100%" src="<%= iframeUrl %>"></iframe>
+    <!--  跨站应用：https://juejin.cn  -->
+    <iframe width="50%" height="100%"  src="https://juejin.cn"></iframe>
+</body>
+</html>
