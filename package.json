@@ -1,0 +1,28 @@
+{
+  "name": "micro-front-end-solution",
+  "version": "1.0.0",
+  "description": "微前端解决方案事例",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderliweihong/Micro-Front-End-Solution.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderliweihong/Micro-Front-End-Solution/issues"
+  },
+  "homepage": "git+https://github.com/coderliweihong/Micro-Front-End-Solution#readme",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "coderlwh",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "ip": "^2.0.1",
+    "lodash-es": "^4.17.21"
+  }
+}
