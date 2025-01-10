@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="importmap">
+    {
+        "imports": {
+            "custom_modules/": "/custom_modules/",
+            "lodash/": "/custom_modules/node_modules/lodash-es/",
+            "lodash": "/custom_modules/node_modules/lodash-es/lodash.js"
+        }
+    }
+</script>
+<script type="module">
+    import {add} from "custom_modules/add.js";
+    import "custom_modules/conflict.js";
+    // import lodash from "lodash";
+    import isNull from "lodash/isNull.js";
+    console.log(isNull);
+    console.log(add(1, 2));
+    console.log(_);
+</script>
+</body>
+</html>
